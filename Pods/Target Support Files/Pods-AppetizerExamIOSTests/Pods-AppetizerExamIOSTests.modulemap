@@ -1,0 +1,6 @@
+framework module Pods_AppetizerExamIOSTests {
+  umbrella header "Pods-AppetizerExamIOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17F573B9F5CC0DC2D71FF1FC /* Pods_AppetizerExamIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA29CDAA6B7EFB7FE1AC4163 /* Pods_AppetizerExamIOSUITests.framework */; };
+		632448D0222D206B00D99288 /* ITunes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632448CF222D206B00D99288 /* ITunes.swift */; };
+		632448D2222D336300D99288 /* ITunesWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632448D1222D336300D99288 /* ITunesWrapper.swift */; };
+		6370B867222D69B7001339E9 /* ITunesListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6370B866222D69B7001339E9 /* ITunesListAdapter.swift */; };
+		637CBDB522293ADD0095E1D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDB422293ADD0095E1D3 /* AppDelegate.swift */; };
+		637CBDB722293ADD0095E1D3 /* ItunesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDB622293ADD0095E1D3 /* ItunesListViewController.swift */; };
+		637CBDBA22293ADD0095E1D3 /* ItunesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637CBDB822293ADD0095E1D3 /* ItunesList.storyboard */; };
+		637CBDBD22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDBB22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodeld */; };
+		637CBDBF22293ADE0095E1D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 637CBDBE22293ADE0095E1D3 /* Assets.xcassets */; };
+		637CBDC222293ADE0095E1D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 637CBDC022293ADE0095E1D3 /* LaunchScreen.storyboard */; };
+		637CBDCD22293ADE0095E1D3 /* AppetizerExamIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDCC22293ADE0095E1D3 /* AppetizerExamIOSTests.swift */; };
+		637CBDD822293ADE0095E1D3 /* AppetizerExamIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDD722293ADE0095E1D3 /* AppetizerExamIOSUITests.swift */; };
+		637CBDE722293C520095E1D3 /* ItunesListModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDE622293C520095E1D3 /* ItunesListModule.swift */; };
+		637CBDE922293C930095E1D3 /* ItunesListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDE822293C930095E1D3 /* ItunesListComponent.swift */; };
+		637CBDEE22293CE70095E1D3 /* ItunesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDED22293CE70095E1D3 /* ItunesListViewModel.swift */; };
+		637CBDF022293D060095E1D3 /* ItunesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDEF22293D060095E1D3 /* ItunesListRepository.swift */; };
+		637CBDF222293D280095E1D3 /* ItunesListRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDF122293D280095E1D3 /* ItunesListRepositoryImpl.swift */; };
+		637CBDF422293D5C0095E1D3 /* ItunesListApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDF322293D5C0095E1D3 /* ItunesListApiService.swift */; };
+		D12895C0BE5F6A7A26EC7098 /* Pods_AppetizerExamIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43293F27AE119FF1F08C7D1 /* Pods_AppetizerExamIOSTests.framework */; };
+		F946484B32C7D343E8F633E2 /* Pods_AppetizerExamIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4629509C0722306C51AD58A /* Pods_AppetizerExamIOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		637CBDC922293ADE0095E1D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637CBDA922293ADD0095E1D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637CBDB022293ADD0095E1D3;
+			remoteInfo = AppetizerExamIOS;
+		};
+		637CBDD422293ADE0095E1D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 637CBDA922293ADD0095E1D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 637CBDB022293ADD0095E1D3;
+			remoteInfo = AppetizerExamIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		632448CF222D206B00D99288 /* ITunes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunes.swift; sourceTree = "<group>"; };
+		632448D1222D336300D99288 /* ITunesWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesWrapper.swift; sourceTree = "<group>"; };
+		6370B866222D69B7001339E9 /* ITunesListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesListAdapter.swift; sourceTree = "<group>"; };
+		637CBDB122293ADD0095E1D3 /* AppetizerExamIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppetizerExamIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		637CBDB422293ADD0095E1D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		637CBDB622293ADD0095E1D3 /* ItunesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListViewController.swift; sourceTree = "<group>"; };
+		637CBDB922293ADD0095E1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ItunesList.storyboard; sourceTree = "<group>"; };
+		637CBDBC22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppetizerExamIOS.xcdatamodel; sourceTree = "<group>"; };
+		637CBDBE22293ADE0095E1D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		637CBDC122293ADE0095E1D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		637CBDC322293ADE0095E1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637CBDC822293ADE0095E1D3 /* AppetizerExamIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppetizerExamIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		637CBDCC22293ADE0095E1D3 /* AppetizerExamIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerExamIOSTests.swift; sourceTree = "<group>"; };
+		637CBDCE22293ADE0095E1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637CBDD322293ADE0095E1D3 /* AppetizerExamIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppetizerExamIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		637CBDD722293ADE0095E1D3 /* AppetizerExamIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerExamIOSUITests.swift; sourceTree = "<group>"; };
+		637CBDD922293ADE0095E1D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		637CBDE622293C520095E1D3 /* ItunesListModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListModule.swift; sourceTree = "<group>"; };
+		637CBDE822293C930095E1D3 /* ItunesListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListComponent.swift; sourceTree = "<group>"; };
+		637CBDED22293CE70095E1D3 /* ItunesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListViewModel.swift; sourceTree = "<group>"; };
+		637CBDEF22293D060095E1D3 /* ItunesListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListRepository.swift; sourceTree = "<group>"; };
+		637CBDF122293D280095E1D3 /* ItunesListRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListRepositoryImpl.swift; sourceTree = "<group>"; };
+		637CBDF322293D5C0095E1D3 /* ItunesListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListApiService.swift; sourceTree = "<group>"; };
+		6D2B735B576B8F8643C35972 /* Pods-AppetizerExamIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOSTests.release.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOSTests/Pods-AppetizerExamIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7FBF130EBF514961BE0DA1EF /* Pods-AppetizerExamIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOSUITests/Pods-AppetizerExamIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		82196EC6F146A1C6933F8CA4 /* Pods-AppetizerExamIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOS.debug.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOS/Pods-AppetizerExamIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B43293F27AE119FF1F08C7D1 /* Pods_AppetizerExamIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppetizerExamIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4AE5A6F17EE0579C5D831A0 /* Pods-AppetizerExamIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOSUITests/Pods-AppetizerExamIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D511333306EB8EBD78667718 /* Pods-AppetizerExamIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOS.release.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOS/Pods-AppetizerExamIOS.release.xcconfig"; sourceTree = "<group>"; };
+		E4629509C0722306C51AD58A /* Pods_AppetizerExamIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppetizerExamIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA29CDAA6B7EFB7FE1AC4163 /* Pods_AppetizerExamIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppetizerExamIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC0BB2888944015DAA5F5AB1 /* Pods-AppetizerExamIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOSTests/Pods-AppetizerExamIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		637CBDAE22293ADD0095E1D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F946484B32C7D343E8F633E2 /* Pods_AppetizerExamIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CBDC522293ADE0095E1D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12895C0BE5F6A7A26EC7098 /* Pods_AppetizerExamIOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CBDD022293ADE0095E1D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F573B9F5CC0DC2D71FF1FC /* Pods_AppetizerExamIOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		160A6815A2DC07941D616643 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4629509C0722306C51AD58A /* Pods_AppetizerExamIOS.framework */,
+				B43293F27AE119FF1F08C7D1 /* Pods_AppetizerExamIOSTests.framework */,
+				EA29CDAA6B7EFB7FE1AC4163 /* Pods_AppetizerExamIOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60D0677D3D76B07AD6D75E11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82196EC6F146A1C6933F8CA4 /* Pods-AppetizerExamIOS.debug.xcconfig */,
+				D511333306EB8EBD78667718 /* Pods-AppetizerExamIOS.release.xcconfig */,
+				EC0BB2888944015DAA5F5AB1 /* Pods-AppetizerExamIOSTests.debug.xcconfig */,
+				6D2B735B576B8F8643C35972 /* Pods-AppetizerExamIOSTests.release.xcconfig */,
+				B4AE5A6F17EE0579C5D831A0 /* Pods-AppetizerExamIOSUITests.debug.xcconfig */,
+				7FBF130EBF514961BE0DA1EF /* Pods-AppetizerExamIOSUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		632448CE222D205000D99288 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				632448CF222D206B00D99288 /* ITunes.swift */,
+				632448D1222D336300D99288 /* ITunesWrapper.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		637CBDA822293ADD0095E1D3 = {
+			isa = PBXGroup;
+			children = (
+				637CBDB322293ADD0095E1D3 /* AppetizerExamIOS */,
+				637CBDCB22293ADE0095E1D3 /* AppetizerExamIOSTests */,
+				637CBDD622293ADE0095E1D3 /* AppetizerExamIOSUITests */,
+				637CBDB222293ADD0095E1D3 /* Products */,
+				60D0677D3D76B07AD6D75E11 /* Pods */,
+				160A6815A2DC07941D616643 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		637CBDB222293ADD0095E1D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				637CBDB122293ADD0095E1D3 /* AppetizerExamIOS.app */,
+				637CBDC822293ADE0095E1D3 /* AppetizerExamIOSTests.xctest */,
+				637CBDD322293ADE0095E1D3 /* AppetizerExamIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		637CBDB322293ADD0095E1D3 /* AppetizerExamIOS */ = {
+			isa = PBXGroup;
+			children = (
+				632448CE222D205000D99288 /* models */,
+				637CBDE522293C200095E1D3 /* ItunesList */,
+				637CBDB422293ADD0095E1D3 /* AppDelegate.swift */,
+				637CBDBE22293ADE0095E1D3 /* Assets.xcassets */,
+				637CBDC022293ADE0095E1D3 /* LaunchScreen.storyboard */,
+				637CBDC322293ADE0095E1D3 /* Info.plist */,
+				637CBDBB22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodeld */,
+			);
+			path = AppetizerExamIOS;
+			sourceTree = "<group>";
+		};
+		637CBDCB22293ADE0095E1D3 /* AppetizerExamIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				637CBDCC22293ADE0095E1D3 /* AppetizerExamIOSTests.swift */,
+				637CBDCE22293ADE0095E1D3 /* Info.plist */,
+			);
+			path = AppetizerExamIOSTests;
+			sourceTree = "<group>";
+		};
+		637CBDD622293ADE0095E1D3 /* AppetizerExamIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				637CBDD722293ADE0095E1D3 /* AppetizerExamIOSUITests.swift */,
+				637CBDD922293ADE0095E1D3 /* Info.plist */,
+			);
+			path = AppetizerExamIOSUITests;
+			sourceTree = "<group>";
+		};
+		637CBDE522293C200095E1D3 /* ItunesList */ = {
+			isa = PBXGroup;
+			children = (
+				637CBDEC22293CD40095E1D3 /* source */,
+				637CBDEB22293CCA0095E1D3 /* repository */,
+				637CBDEA22293CBD0095E1D3 /* viewmodel */,
+				637CBDB622293ADD0095E1D3 /* ItunesListViewController.swift */,
+				637CBDE622293C520095E1D3 /* ItunesListModule.swift */,
+				637CBDE822293C930095E1D3 /* ItunesListComponent.swift */,
+				637CBDB822293ADD0095E1D3 /* ItunesList.storyboard */,
+				6370B866222D69B7001339E9 /* ITunesListAdapter.swift */,
+			);
+			path = ItunesList;
+			sourceTree = "<group>";
+		};
+		637CBDEA22293CBD0095E1D3 /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				637CBDED22293CE70095E1D3 /* ItunesListViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		637CBDEB22293CCA0095E1D3 /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				637CBDEF22293D060095E1D3 /* ItunesListRepository.swift */,
+				637CBDF122293D280095E1D3 /* ItunesListRepositoryImpl.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		637CBDEC22293CD40095E1D3 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				637CBDF322293D5C0095E1D3 /* ItunesListApiService.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		637CBDB022293ADD0095E1D3 /* AppetizerExamIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637CBDDC22293ADE0095E1D3 /* Build configuration list for PBXNativeTarget "AppetizerExamIOS" */;
+			buildPhases = (
+				5B2EE557C1A1A9E45E6E272D /* [CP] Check Pods Manifest.lock */,
+				637CBDAD22293ADD0095E1D3 /* Sources */,
+				637CBDAE22293ADD0095E1D3 /* Frameworks */,
+				637CBDAF22293ADD0095E1D3 /* Resources */,
+				43396247E23CF937C056FEDA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppetizerExamIOS;
+			productName = AppetizerExamIOS;
+			productReference = 637CBDB122293ADD0095E1D3 /* AppetizerExamIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		637CBDC722293ADE0095E1D3 /* AppetizerExamIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637CBDDF22293ADE0095E1D3 /* Build configuration list for PBXNativeTarget "AppetizerExamIOSTests" */;
+			buildPhases = (
+				69B54BA937F8F2A5EFFF6121 /* [CP] Check Pods Manifest.lock */,
+				637CBDC422293ADE0095E1D3 /* Sources */,
+				637CBDC522293ADE0095E1D3 /* Frameworks */,
+				637CBDC622293ADE0095E1D3 /* Resources */,
+				BB621DB18877441F140C1098 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				637CBDCA22293ADE0095E1D3 /* PBXTargetDependency */,
+			);
+			name = AppetizerExamIOSTests;
+			productName = AppetizerExamIOSTests;
+			productReference = 637CBDC822293ADE0095E1D3 /* AppetizerExamIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		637CBDD222293ADE0095E1D3 /* AppetizerExamIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 637CBDE222293ADE0095E1D3 /* Build configuration list for PBXNativeTarget "AppetizerExamIOSUITests" */;
+			buildPhases = (
+				188176405018067745201F63 /* [CP] Check Pods Manifest.lock */,
+				637CBDCF22293ADE0095E1D3 /* Sources */,
+				637CBDD022293ADE0095E1D3 /* Frameworks */,
+				637CBDD122293ADE0095E1D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				637CBDD522293ADE0095E1D3 /* PBXTargetDependency */,
+			);
+			name = AppetizerExamIOSUITests;
+			productName = AppetizerExamIOSUITests;
+			productReference = 637CBDD322293ADE0095E1D3 /* AppetizerExamIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		637CBDA922293ADD0095E1D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = AppetizerIOSCodingExam;
+				TargetAttributes = {
+					637CBDB022293ADD0095E1D3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					637CBDC722293ADE0095E1D3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 637CBDB022293ADD0095E1D3;
+					};
+					637CBDD222293ADE0095E1D3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 637CBDB022293ADD0095E1D3;
+					};
+				};
+			};
+			buildConfigurationList = 637CBDAC22293ADD0095E1D3 /* Build configuration list for PBXProject "AppetizerExamIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 637CBDA822293ADD0095E1D3;
+			productRefGroup = 637CBDB222293ADD0095E1D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				637CBDB022293ADD0095E1D3 /* AppetizerExamIOS */,
+				637CBDC722293ADE0095E1D3 /* AppetizerExamIOSTests */,
+				637CBDD222293ADE0095E1D3 /* AppetizerExamIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		637CBDAF22293ADD0095E1D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CBDC222293ADE0095E1D3 /* LaunchScreen.storyboard in Resources */,
+				637CBDBF22293ADE0095E1D3 /* Assets.xcassets in Resources */,
+				637CBDBA22293ADD0095E1D3 /* ItunesList.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CBDC622293ADE0095E1D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CBDD122293ADE0095E1D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		188176405018067745201F63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppetizerExamIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43396247E23CF937C056FEDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppetizerExamIOS/Pods-AppetizerExamIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppetizerExamIOS/Pods-AppetizerExamIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B2EE557C1A1A9E45E6E272D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppetizerExamIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69B54BA937F8F2A5EFFF6121 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppetizerExamIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB621DB18877441F140C1098 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AppetizerExamIOSTests/Pods-AppetizerExamIOSTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AppetizerExamIOSTests/Pods-AppetizerExamIOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		637CBDAD22293ADD0095E1D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632448D2222D336300D99288 /* ITunesWrapper.swift in Sources */,
+				637CBDEE22293CE70095E1D3 /* ItunesListViewModel.swift in Sources */,
+				637CBDB722293ADD0095E1D3 /* ItunesListViewController.swift in Sources */,
+				637CBDE922293C930095E1D3 /* ItunesListComponent.swift in Sources */,
+				637CBDBD22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodeld in Sources */,
+				637CBDB522293ADD0095E1D3 /* AppDelegate.swift in Sources */,
+				637CBDF022293D060095E1D3 /* ItunesListRepository.swift in Sources */,
+				6370B867222D69B7001339E9 /* ITunesListAdapter.swift in Sources */,
+				637CBDE722293C520095E1D3 /* ItunesListModule.swift in Sources */,
+				637CBDF222293D280095E1D3 /* ItunesListRepositoryImpl.swift in Sources */,
+				637CBDF422293D5C0095E1D3 /* ItunesListApiService.swift in Sources */,
+				632448D0222D206B00D99288 /* ITunes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CBDC422293ADE0095E1D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CBDCD22293ADE0095E1D3 /* AppetizerExamIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		637CBDCF22293ADE0095E1D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637CBDD822293ADE0095E1D3 /* AppetizerExamIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		637CBDCA22293ADE0095E1D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637CBDB022293ADD0095E1D3 /* AppetizerExamIOS */;
+			targetProxy = 637CBDC922293ADE0095E1D3 /* PBXContainerItemProxy */;
+		};
+		637CBDD522293ADE0095E1D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 637CBDB022293ADD0095E1D3 /* AppetizerExamIOS */;
+			targetProxy = 637CBDD422293ADE0095E1D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		637CBDB822293ADD0095E1D3 /* ItunesList.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637CBDB922293ADD0095E1D3 /* Base */,
+			);
+			name = ItunesList.storyboard;
+			sourceTree = "<group>";
+		};
+		637CBDC022293ADE0095E1D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637CBDC122293ADE0095E1D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		637CBDDA22293ADE0095E1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		637CBDDB22293ADE0095E1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		637CBDDD22293ADE0095E1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82196EC6F146A1C6933F8CA4 /* Pods-AppetizerExamIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBKXT7K3NV;
+				INFOPLIST_FILE = AppetizerExamIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.AppetizerExamIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		637CBDDE22293ADE0095E1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D511333306EB8EBD78667718 /* Pods-AppetizerExamIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBKXT7K3NV;
+				INFOPLIST_FILE = AppetizerExamIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.AppetizerExamIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		637CBDE022293ADE0095E1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC0BB2888944015DAA5F5AB1 /* Pods-AppetizerExamIOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBKXT7K3NV;
+				INFOPLIST_FILE = AppetizerExamIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.AppetizerExamIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppetizerExamIOS.app/AppetizerExamIOS";
+			};
+			name = Debug;
+		};
+		637CBDE122293ADE0095E1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D2B735B576B8F8643C35972 /* Pods-AppetizerExamIOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBKXT7K3NV;
+				INFOPLIST_FILE = AppetizerExamIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.AppetizerExamIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppetizerExamIOS.app/AppetizerExamIOS";
+			};
+			name = Release;
+		};
+		637CBDE322293ADE0095E1D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4AE5A6F17EE0579C5D831A0 /* Pods-AppetizerExamIOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBKXT7K3NV;
+				INFOPLIST_FILE = AppetizerExamIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.AppetizerExamIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppetizerExamIOS;
+			};
+			name = Debug;
+		};
+		637CBDE422293ADE0095E1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FBF130EBF514961BE0DA1EF /* Pods-AppetizerExamIOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TBKXT7K3NV;
+				INFOPLIST_FILE = AppetizerExamIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.AppetizerExamIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AppetizerExamIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		637CBDAC22293ADD0095E1D3 /* Build configuration list for PBXProject "AppetizerExamIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637CBDDA22293ADE0095E1D3 /* Debug */,
+				637CBDDB22293ADE0095E1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637CBDDC22293ADE0095E1D3 /* Build configuration list for PBXNativeTarget "AppetizerExamIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637CBDDD22293ADE0095E1D3 /* Debug */,
+				637CBDDE22293ADE0095E1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637CBDDF22293ADE0095E1D3 /* Build configuration list for PBXNativeTarget "AppetizerExamIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637CBDE022293ADE0095E1D3 /* Debug */,
+				637CBDE122293ADE0095E1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		637CBDE222293ADE0095E1D3 /* Build configuration list for PBXNativeTarget "AppetizerExamIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				637CBDE322293ADE0095E1D3 /* Debug */,
+				637CBDE422293ADE0095E1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		637CBDBB22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				637CBDBC22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodel */,
+			);
+			currentVersion = 637CBDBC22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodel */;
+			path = AppetizerExamIOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 637CBDA922293ADD0095E1D3 /* Project object */;
+}
