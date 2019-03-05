@@ -25,6 +25,10 @@
 		637CBDF022293D060095E1D3 /* ItunesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDEF22293D060095E1D3 /* ItunesListRepository.swift */; };
 		637CBDF222293D280095E1D3 /* ItunesListRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDF122293D280095E1D3 /* ItunesListRepositoryImpl.swift */; };
 		637CBDF422293D5C0095E1D3 /* ItunesListApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637CBDF322293D5C0095E1D3 /* ItunesListApiService.swift */; };
+		63DA9279222E5A32006F4DC6 /* WidgetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA9278222E5A31006F4DC6 /* WidgetType.swift */; };
+		63DA927D222E5CFE006F4DC6 /* ItunesItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA927B222E5CFE006F4DC6 /* ItunesItemTableViewCell.swift */; };
+		63DA927E222E5CFE006F4DC6 /* ItunesItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63DA927C222E5CFE006F4DC6 /* ItunesItemTableViewCell.xib */; };
+		63DA9281222E6845006F4DC6 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA9280222E6845006F4DC6 /* BaseTableViewCell.swift */; };
 		D12895C0BE5F6A7A26EC7098 /* Pods_AppetizerExamIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43293F27AE119FF1F08C7D1 /* Pods_AppetizerExamIOSTests.framework */; };
 		F946484B32C7D343E8F633E2 /* Pods_AppetizerExamIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4629509C0722306C51AD58A /* Pods_AppetizerExamIOS.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +74,10 @@
 		637CBDEF22293D060095E1D3 /* ItunesListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListRepository.swift; sourceTree = "<group>"; };
 		637CBDF122293D280095E1D3 /* ItunesListRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListRepositoryImpl.swift; sourceTree = "<group>"; };
 		637CBDF322293D5C0095E1D3 /* ItunesListApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesListApiService.swift; sourceTree = "<group>"; };
+		63DA9278222E5A31006F4DC6 /* WidgetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetType.swift; sourceTree = "<group>"; };
+		63DA927B222E5CFE006F4DC6 /* ItunesItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesItemTableViewCell.swift; sourceTree = "<group>"; };
+		63DA927C222E5CFE006F4DC6 /* ItunesItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItunesItemTableViewCell.xib; sourceTree = "<group>"; };
+		63DA9280222E6845006F4DC6 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		6D2B735B576B8F8643C35972 /* Pods-AppetizerExamIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOSTests.release.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOSTests/Pods-AppetizerExamIOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		7FBF130EBF514961BE0DA1EF /* Pods-AppetizerExamIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOSUITests.release.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOSUITests/Pods-AppetizerExamIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82196EC6F146A1C6933F8CA4 /* Pods-AppetizerExamIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppetizerExamIOS.debug.xcconfig"; path = "Target Support Files/Pods-AppetizerExamIOS/Pods-AppetizerExamIOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,14 +206,12 @@
 		637CBDE522293C200095E1D3 /* ItunesList */ = {
 			isa = PBXGroup;
 			children = (
+				63DA927A222E5C8A006F4DC6 /* view */,
 				637CBDEC22293CD40095E1D3 /* source */,
 				637CBDEB22293CCA0095E1D3 /* repository */,
 				637CBDEA22293CBD0095E1D3 /* viewmodel */,
-				637CBDB622293ADD0095E1D3 /* ItunesListViewController.swift */,
 				637CBDE622293C520095E1D3 /* ItunesListModule.swift */,
 				637CBDE822293C930095E1D3 /* ItunesListComponent.swift */,
-				637CBDB822293ADD0095E1D3 /* ItunesList.storyboard */,
-				6370B866222D69B7001339E9 /* ITunesListAdapter.swift */,
 			);
 			path = ItunesList;
 			sourceTree = "<group>";
@@ -233,6 +239,28 @@
 				637CBDF322293D5C0095E1D3 /* ItunesListApiService.swift */,
 			);
 			path = source;
+			sourceTree = "<group>";
+		};
+		63DA927A222E5C8A006F4DC6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				63DA927F222E5D04006F4DC6 /* viewholder */,
+				637CBDB622293ADD0095E1D3 /* ItunesListViewController.swift */,
+				637CBDB822293ADD0095E1D3 /* ItunesList.storyboard */,
+				6370B866222D69B7001339E9 /* ITunesListAdapter.swift */,
+				63DA9278222E5A31006F4DC6 /* WidgetType.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		63DA927F222E5D04006F4DC6 /* viewholder */ = {
+			isa = PBXGroup;
+			children = (
+				63DA927B222E5CFE006F4DC6 /* ItunesItemTableViewCell.swift */,
+				63DA927C222E5CFE006F4DC6 /* ItunesItemTableViewCell.xib */,
+				63DA9280222E6845006F4DC6 /* BaseTableViewCell.swift */,
+			);
+			path = viewholder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +374,7 @@
 			files = (
 				637CBDC222293ADE0095E1D3 /* LaunchScreen.storyboard in Resources */,
 				637CBDBF22293ADE0095E1D3 /* Assets.xcassets in Resources */,
+				63DA927E222E5CFE006F4DC6 /* ItunesItemTableViewCell.xib in Resources */,
 				637CBDBA22293ADD0095E1D3 /* ItunesList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,13 +537,16 @@
 				637CBDEE22293CE70095E1D3 /* ItunesListViewModel.swift in Sources */,
 				637CBDB722293ADD0095E1D3 /* ItunesListViewController.swift in Sources */,
 				637CBDE922293C930095E1D3 /* ItunesListComponent.swift in Sources */,
+				63DA9279222E5A32006F4DC6 /* WidgetType.swift in Sources */,
 				637CBDBD22293ADD0095E1D3 /* AppetizerExamIOS.xcdatamodeld in Sources */,
 				637CBDB522293ADD0095E1D3 /* AppDelegate.swift in Sources */,
 				637CBDF022293D060095E1D3 /* ItunesListRepository.swift in Sources */,
 				6370B867222D69B7001339E9 /* ITunesListAdapter.swift in Sources */,
 				637CBDE722293C520095E1D3 /* ItunesListModule.swift in Sources */,
+				63DA927D222E5CFE006F4DC6 /* ItunesItemTableViewCell.swift in Sources */,
 				637CBDF222293D280095E1D3 /* ItunesListRepositoryImpl.swift in Sources */,
 				637CBDF422293D5C0095E1D3 /* ItunesListApiService.swift in Sources */,
+				63DA9281222E6845006F4DC6 /* BaseTableViewCell.swift in Sources */,
 				632448D0222D206B00D99288 /* ITunes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

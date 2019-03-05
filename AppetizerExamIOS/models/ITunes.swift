@@ -49,6 +49,7 @@ class ITunes: Mappable {
     var trackHdRentalPrice: Double?
     var shortDescription: String?
     var contentAdvisoryRating: String?
+    let type = WidgetType.TYPE_ITEM
     
     required init?(map: Map) {
         
